@@ -45,7 +45,7 @@ const Gray = () => {
   };
 
   return (
-    <div className="p-10 bg-green-950">
+    <div className="p-10 bg-green-950 tablet:bg-green-950">
       <h1 className="text-center text-2xl text-white font-semibold underline decoration-4">
         Admin.1 Posting To DataBase
       </h1>
