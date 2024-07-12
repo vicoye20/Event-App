@@ -31,7 +31,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/event/664b5378a6248b2964d4e661")
+      .get("https://event-app-server.onrender.com/event/664b5378a6248b2964d4e661")
       .then((res) => {
         setEvent([res.data]);
         setLoading(false);
