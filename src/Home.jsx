@@ -43,7 +43,7 @@ const Home = () => {
 
     const fetchEvent = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/events");
+        const res = await axios.get("https://event-app-server.onrender.com/events");
         setAllEvents(res.data);
       } catch (err) {
         setError(err);
@@ -54,7 +54,7 @@ const Home = () => {
 
     const fetchDisEvent = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/eventsTwo");
+        const res = await axios.get("https://event-app-server.onrender.com/eventsTwo");
         setDisEvent(res.data);
       } catch (err) {
         setError(err);
