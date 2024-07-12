@@ -14,7 +14,7 @@ const DancersDynamic = () => {
     useEffect(() => {
       const fetchEvent = async () => {
         try {
-          const res = await axios.get(`http://localhost:3000/dancers/${id}`);
+          const res = await axios.get(`https://event-app-server.onrender.com/dancers/${id}`);
           setEvent(res.data);
           setLoading(false);
         } catch (err) {

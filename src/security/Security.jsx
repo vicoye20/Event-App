@@ -12,7 +12,7 @@ const Security = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/securities")
+      .get("https://event-app-server.onrender.com/securities")
       .then((res) => {
         setData(res.data);
         setLoading(false);

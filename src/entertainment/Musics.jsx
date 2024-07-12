@@ -13,7 +13,7 @@ const Musics = () => {
   useEffect(() => {
     const fetchMusic = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/musics");
+        const res = await axios.get("https://event-app-server.onrender.com/musics");
         setMusic(res.data);
       } catch (err) {
         setError(err);

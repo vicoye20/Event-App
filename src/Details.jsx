@@ -16,7 +16,7 @@ const Details = () => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/event/${id}`);
+        const res = await axios.get(`https://event-app-server.onrender.com/event/${id}`);
         setEvent(res.data);
         setLoading(false);
       } catch (err) {

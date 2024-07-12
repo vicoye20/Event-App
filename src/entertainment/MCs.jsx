@@ -14,7 +14,7 @@ const MCs = () => {
   useEffect(() => {
     const mcs = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/mcs");
+        const res = await axios.get("https://event-app-server.onrender.com/mcs");
         setMc(res.data);
       } catch (err) {
         setError(err);

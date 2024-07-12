@@ -14,7 +14,7 @@ const Comedian = () => {
   useEffect(() => {
     const comedian = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/comedians");
+        const res = await axios.get("https://event-app-server.onrender.com/comedians");
         setComedian(res.data);
       } catch (err) {
         setError(err);

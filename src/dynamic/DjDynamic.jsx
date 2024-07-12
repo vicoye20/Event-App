@@ -13,7 +13,7 @@ const DjDynamic = () => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/discs/${id}`);
+        const res = await axios.get(`https://event-app-server.onrender.com/discs/${id}`);
         setEvent(res.data);
         setLoading(false);
       } catch (err) {

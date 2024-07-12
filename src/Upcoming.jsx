@@ -18,7 +18,7 @@ const Upcoming = () => {
   useEffect(() => {
     const fecthEvent = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/eventsTwo");
+        const res = await axios.get("https://event-app-server.onrender.com/eventsTwo");
         setEvent(res.data);
       } catch (err) {
         setError(err);

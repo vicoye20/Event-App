@@ -20,7 +20,7 @@ const Entertainment = () => {
   useEffect(() => {
     const disc = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/discs");
+        const res = await axios.get("https://event-app-server.onrender.com/discs");
         setDj(res.data);
       } catch (err) {
         setError(err);
@@ -31,7 +31,7 @@ const Entertainment = () => {
 
     const comedian = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/comedians");
+        const res = await axios.get("https://event-app-server.onrender.com/comedians");
         setComedy(res.data);
       } catch (err) {
         setError(err);
@@ -42,7 +42,7 @@ const Entertainment = () => {
 
     const dance = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/dancers");
+        const res = await axios.get("https://event-app-server.onrender.com/dancers");
         setDancer(res.data);
       } catch (err) {
         setError(err);
@@ -53,7 +53,7 @@ const Entertainment = () => {
 
     const musics = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/musics");
+        const res = await axios.get("https://event-app-server.onrender.com/musics");
         setMusic(res.data);
       } catch (err) {
         setError(err);
@@ -64,7 +64,7 @@ const Entertainment = () => {
 
     const sounds = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/sounds");
+        const res = await axios.get("https://event-app-server.onrender.com/sounds");
         setSound(res.data);
       } catch (err) {
         setError(err);
@@ -75,7 +75,7 @@ const Entertainment = () => {
 
     const mcs = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/mcs");
+        const res = await axios.get("https://event-app-server.onrender.com/mcs");
         setMc(res.data);
       } catch (err) {
         setError(err);

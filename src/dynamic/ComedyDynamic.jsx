@@ -15,7 +15,7 @@ const ComedyDynamic = () => {
     useEffect(() => {
       const fetchEvent = async () => {
         try {
-          const res = await axios.get(`http://localhost:3000/comedians/${id}`);
+          const res = await axios.get(`https://event-app-server.onrender.com/comedians/${id}`);
           setEvent(res.data);
           setLoading(false);
         } catch (err) {

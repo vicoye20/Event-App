@@ -12,7 +12,7 @@ const Video = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/videographers")
+      .get("https://event-app-server.onrender.com/videographers")
       .then((res) => {
         setData(res.data);
         setLoading(false);

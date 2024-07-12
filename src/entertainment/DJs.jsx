@@ -13,7 +13,7 @@ const DJs = () => {
   useEffect(() => {
     const disc = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/discs");
+        const res = await axios.get("https://event-app-server.onrender.com/discs");
         setDjs(res.data);
       } catch (err) {
         setError(err);

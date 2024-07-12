@@ -12,7 +12,7 @@ const Catering = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/caterings")
+      .get("https://event-app-server.onrender.com/caterings")
       .then((res) => {
         setData(res.data);
         setLoading(false);

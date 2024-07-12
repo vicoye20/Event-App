@@ -13,7 +13,7 @@ const Dancers = () => {
   useEffect(() => {
     const dance = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/dancers");
+        const res = await axios.get("https://event-app-server.onrender.com/dancers");
         setDancer(res.data);
       } catch (err) {
         setError(err);

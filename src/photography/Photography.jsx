@@ -12,7 +12,7 @@ const Photography = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/photographers")
+      .get("https://event-app-server.onrender.com/photographers")
       .then((res) => {
         setData(res.data);
         setLoading(false);

@@ -19,7 +19,7 @@ const Details3 = () => {
       const fetchEvent = async () => {
         try {
           const res = await axios.get(
-            `http://localhost:3000/eventsThree/${id}`
+            `https://event-app-server.onrender.com/eventsThree/${id}`
           );
           setEvent(res.data);
           setLoading(false);

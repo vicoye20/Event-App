@@ -18,7 +18,7 @@ const Events = () => {
   useEffect(() => {
     const routeEvent = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/eventsThree");
+        const res = await axios.get("https://event-app-server.onrender.com/eventsThree");
         setEvent(res.data);
       } catch (err) {
         setError(err);

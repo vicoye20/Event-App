@@ -15,7 +15,7 @@ const SoundDynamic = () => {
     useEffect(() => {
       const fetchEvent = async () => {
         try {
-          const res = await axios.get(`http://localhost:3000/sounds/${id}`);
+          const res = await axios.get(`https://event-app-server.onrender.com/sounds/${id}`);
           setEvent(res.data);
           setLoading(false);
         } catch (err) {
